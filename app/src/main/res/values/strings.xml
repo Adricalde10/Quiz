@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QuizTrivial</string>
+
+    <string name="BTMLOGIN">LOGIN</string>
+    <string name="BTMREGISTRO">REGISTRE</string>
+
 </resources>
