@@ -1,6 +1,7 @@
 package com.example.quiztrivial
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -20,6 +21,8 @@ class LoginRegister : AppCompatActivity() {
         }
         BTMREGISTRO.setOnClickListener(){
             Toast.makeText(this, "click botó Registre",Toast.LENGTH_LONG).show();
+            val intent = Intent(this, MainActivity2::class.java) // Reemplaza con la actividad de destino
+            startActivity(intent)
         }
     }
 }
