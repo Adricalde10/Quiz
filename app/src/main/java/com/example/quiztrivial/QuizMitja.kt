@@ -57,7 +57,7 @@ class QuizMitja : AppCompatActivity() {
                 ansA.text = choices[currentQuestionIndex][0]
                 ansB.text = choices[currentQuestionIndex][1]
                 ansC.text = choices[currentQuestionIndex][2]
-                ansD.text = choices[currentQuestionIndex].getOrElse(3) { "Opció D" }  // Para evitar posibles nulls
+                ansD.text = choices[currentQuestionIndex][3]  // Para evitar posibles nulls
             }
         }
 
