@@ -14,21 +14,25 @@ class QuizFacil : AppCompatActivity() {
             "Quin conflicte va succeir entre 1939 i 1945?",
             "En quin pais va neixer Rasputin?",
             "Que es mes gran, un atom o una molecula?",
-            "Qui va ser el primer cosmonauta?"
+            "Qui va ser el primer cosmonauta?",
+            "Qui es el president dels EEUU?"
         )
 
         val choices = arrayOf(
             arrayOf("Segona guerra mundial", "Primera guerra mundial", "Guerra de vietnam"),
             arrayOf("Ucraina", "Russia", "Lituania"),
             arrayOf("Atom", "Molecula", "Els dos igual"),
-            arrayOf("Yuri Gagarin", "Carrero Blanco", "Tom Hank")
+            arrayOf("Yuri Gagarin", "Carrero Blanco", "Tom Hank"),
+            arrayOf("Donald Trump", "Barack Obama", "Kamala Harris")
+
         )
 
         val correctAnswers = arrayOf(
             "Segona guerra mundial",
             "Russia",
             "Molecula",
-            "Yuri Gagarin"
+            "Yuri Gagarin",
+            "Donald Trump"
         )
     }
 
@@ -57,7 +61,7 @@ class QuizFacil : AppCompatActivity() {
                 ansA.text = choices[currentQuestionIndex][0]
                 ansB.text = choices[currentQuestionIndex][1]
                 ansC.text = choices[currentQuestionIndex][2]
-                ansD.text = choices[currentQuestionIndex].getOrElse(3) { "Opció D" }  // Para evitar posibles nulls
+                ansD.text = choices[currentQuestionIndex][3]  // Para evitar posibles nulls
             }
         }
 
