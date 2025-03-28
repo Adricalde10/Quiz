@@ -1,6 +1,8 @@
 package com.example.quiztrivial
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
@@ -17,7 +19,28 @@ class Credits : AppCompatActivity() {
 
         // Inicia el temporitzador
         timer.scheduleAtFixedRate(TimeTask(), 0L, 3000L)
+
+
+
+        val buttonEnrere: Button = findViewById(R.id.buttonEnrere)
+
+
+        buttonEnrere.setOnClickListener {
+
+            val intent = Intent(this, Menu::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
+
     }
+
+
+
+
+
+
 
     // Classe interna TimeTask per canviar els fragments
     private inner class TimeTask : TimerTask() {
